@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mainBody">
+    <section id="leftSec">
+        <div class="leftWrapper" style="max-width: 80%; margin: 0 auto; padding: 5% 0%; display: flex; flex-direction: column; gap: 40px;">
+            <div class="input1">
+                <label for="netProvider">Choose a Network Provider:</label>
+                <select name="" id="netProvider" class="Inputs">
+                <option value="Select your Network Provider">Select your Network Provider</option>
+                <option value="MTN">MTN</option>
+                <option value="AIRTEL">AIRTEL</option>
+                <option value="GLO">GLO</option>
+                <option value="9Mobile">9Mobile</option>
+            </select>
+            </div>
+            <div class="input2">
+                <label for="cardPrice">Choose Amount</label>
+                <select name="" id="cardPrice" class="Inputs">
+                <option value="Select Amount">Select Amount</option>
+                <option value="1000">1000</option>
+                <option value="500">500</option>
+                <option value="200">200</option>
+                <option value="100">100</option>
+            </select>
+            </div>
+            <div class="input3">
+                <input type="text" id="pinContainer" placeholder="PIN" class="Inputs">
+            </div>
+            <div class="buttons">
+                <button class="LeftButton" onclick="generate()">Generate PIN</button>
+                <button style="background-color: cadetblue;" class="LeftButton" onclick="record()">Buy Card</button>
+            </div>
+        </div>
+    </section>
+    <section id="rightSec">
+        <div class="rightWrapper" style="max-width: 80%; margin: 0 auto; padding: 15% 0%; display: flex; flex-direction: column; gap: 40px;">
+            <label for="rechargeHere">Recharge Here:</label>
+            <input type="text" name="" id="rechargeHere" class="rightInputs" placeholder="Input Recharge Ref">
+            <button class="LeftButton" onclick="checkUsage()">Recharge Now</button>
+        </div>
+    </section>
+    </div>
+    <table id="mainTable" style="width: 95%; margin: 0 auto;">
+        <tr>
+            <td>S/N</td>
+            <td>Date</td>
+            <td>Network</td>
+            <td>Amount</td>
+            <td>Recharge Pin</td>
+            <td>Recharge Ref</td>
+            <td>Status</td>
+            <td>Delete</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
