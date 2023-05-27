@@ -106,8 +106,7 @@ function remov(i){
   ar.splice(i, 1) 
   display() 
 }
-const useCard = ar.fiter(checkUsage);
-function checkUsage(card){
+function checkUsage(){
 // for (let i= 0; i<ar.length; i++) {
 //     if (ar[i].Status === 'unused' && ar[i].rechargeRef === rechargeHere.value){
 //      ar[i].Status = 'used'
